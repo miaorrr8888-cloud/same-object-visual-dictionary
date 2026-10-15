@@ -1,0 +1,12 @@
+{
+  "reviews": [
+    {
+      "image": "variant.png",
+      "decision": "needs_review",
+      "reviewer": "AI visual inspection - third round demo",
+      "same_object": null,
+      "text_checked": null,
+      "notes": "AI visual inspection: turquoise squat mug, orange handle on right, single white triangle remain visible. This is not independent human review or exact-identity proof."
+    }
+  ]
+}

@@ -18,7 +18,7 @@ def review(manifest,decisions):
         accepted=r.get('decision')=='accept'
         if accepted and not (r.get('same_object') is True and r.get('text_checked') is True and isinstance(r.get('reviewer'),str) and r['reviewer'].strip()):raise ValueError('accept requires reviewer, same_object and text_checked')
         rows.append({'image':name,'sha256':hashlib.sha256(image.read_bytes()).hexdigest(),'decision':r.get('decision','needs_review'),
-                     'reviewer':r.get('reviewer'),'notes':r.get('notes'),'identity_origin':'HUMAN_DECLARATION','auto_verified':False})
+                     'reviewer':r.get('reviewer'),'notes':r.get('notes'),'identity_origin':'UNREVIEWED' if r.get('decision','needs_review')=='needs_review' else 'HUMAN_DECLARATION','auto_verified':False})
     extra=set(by_image)-{v['image'] for v in data['variants']}
     if extra:raise ValueError('review refers to unknown image')
     return {'variants':rows,'accepted':sum(r['decision']=='accept' for r in rows)}

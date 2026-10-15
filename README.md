@@ -32,7 +32,7 @@ python scripts/build_gallery.py examples/manifest.json output-gallery
 
 ## 当前限制
 
-不自动生成或识别图片。人工声明不等于独立验证；仍需检查物体身份、生成来源、许可和图片质量。生成服务接入需另行配置和实测。
+独立Python脚本负责登记与展示，不调用生图服务；生图由宿主可用工具完成。示例已记录真实生成，但物体精确一致性和美术质量仍待使用者验收，AI目视意见不标成人工验收。没有自动调度未获授权的付费服务。
 
 ## 验证与使用注意
 
@@ -61,3 +61,14 @@ python scripts/review_gallery.py examples/manifest.json examples/reviews.json
 ```
 
 新增工具的输入字段见脚本参数与 examples/。快照示例采用固定日期，过期后正常返回 HOLD；需要检查新采集的页面时填写真实带时区的采集时间，不要改日期伪装新证据。
+
+## 第三轮：真实生成图接入词典
+
+用宿主内置图像生成工具实际生成参考杯子，再基于参考图生成换场景版本；新增输出登记，保留实际提示词、来源声明、文件哈希，并可直接生成图库。
+
+```sh
+python scripts/build_gallery.py examples/generated-mug/manifest.json generated-mug-gallery
+python scripts/review_gallery.py examples/generated-mug/manifest.json examples/generated-mug/reviews.json
+# 新图登记：python scripts/register_generation.py anchor.png variant.png generation.json new-case
+# generation.json 必须含 prompt、provider、带时区 generated_at；可选 model（未知不猜）。
+```

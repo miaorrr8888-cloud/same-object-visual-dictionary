@@ -1,0 +1,16 @@
+{
+  "anchor": "anchor.png",
+  "variants": [
+    {
+      "anchor": "anchor.png",
+      "image": "variant.png",
+      "prompt": "Create a new photorealistic lifestyle product photograph using the exact same mug from the reference. Preserve its squat cylindrical matte turquoise ceramic body, orange rounded handle on the RIGHT and the single small white triangle on the front. Do not change the mug identity, proportions, colors, handle or triangle. Change only setting and lighting: the mug on a natural wooden desk beside a softly blurred window, gentle golden morning light. Entire mug visible, three-quarter front view, no hands, no writing, no extra mugs. One image.",
+      "status": "GENERATED",
+      "provider": "Codex built-in image_gen",
+      "generated_at": "2026-10-15T05:51:16.114983+00:00",
+      "model": "UNDISCLOSED",
+      "generation_record_origin": "OBSERVED_BUILTIN_TOOL_OUTPUT",
+      "visual_identity_verified": false
+    }
+  ]
+}

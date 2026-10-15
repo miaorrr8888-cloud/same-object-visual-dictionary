@@ -1,0 +1,8 @@
+{
+  "anchor_sha256": "8bb13ee87bc22c390c0f4426e440d99977ba54b5c9951c53a1db419cea024d49",
+  "variant_sha256": "fa3e1ebe129e8326200c407599fbaa12696f5a66d4c65820a90fe859aaa65843",
+  "provider": "Codex built-in image_gen",
+  "provider_job_id": null,
+  "record_verified": true,
+  "verification_scope": "Generation tool returned both saved image files; no identity guarantee"
+}
