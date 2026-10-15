@@ -1,0 +1,11 @@
+{
+  "anchor": "anchor.png",
+  "variants": [
+    {
+      "anchor": "anchor.png",
+      "image": "variant.png",
+      "prompt": "Synthetic reference label, not a measured AI generation prompt",
+      "status": "REFERENCE"
+    }
+  ]
+}
