@@ -1,5 +1,7 @@
 # 同对象提示词视觉词典
 
+[新手逐步使用指南](USER_GUIDE.md) · [用途与适用人群介绍](INTRODUCTION.md)
+
 `same-object-visual-dictionary` · 独立技能仓库 · MIT
 
 适合：整理风格对比图、提示词案例的设计师与教学作者
