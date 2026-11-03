@@ -10,6 +10,15 @@
 
 把同一参考对象的不同图片变体并排展示，保留提示词和来源状态，便于比较、复制和复用。
 
+## 安装
+
+```sh
+python -m pip install -r requirements.txt   # 只有 Pillow
+python scripts/build_gallery.py examples/manifest.json output-gallery   # 跑自带的合成示例
+```
+
+作为技能使用时，把整个目录放进 `%USERPROFILE%\.workbuddy\skills\` 即可，无额外安装步骤。
+
 ## 快速开始
 
 Python 3.10+ 和 Pillow：python -m pip install -r requirements.txt。
@@ -31,6 +40,14 @@ python scripts/build_gallery.py examples/manifest.json output-gallery
 原有缺口：只检查图片后缀，坏图也能进入网页；缺能直接运行的完整清单和图片样例。
 
 已补：加入 Pillow 实际解码校验、清单字段检查、友好报错和提示词复制按钮；提供合成参考图片与 manifest。
+
+## 适用用户
+
+**适合：** 用 AI 生图做主图/场景图的电商运营——需要把「参考图」「生成图」「来源不明」分开存档，
+以便在被平台问到时拿得出留痕；以及需要给设计外包定交付标准的人。
+
+**不适合：** 想直接生成商品图的人（本技能不生成图片，只组织和标注已有的图与提示词）；
+需要图库 SaaS 那种在线协作的人。
 
 ## 当前限制
 
