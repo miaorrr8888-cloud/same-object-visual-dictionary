@@ -74,3 +74,12 @@ python scripts/review_gallery.py examples/generated-mug/manifest.json examples/g
 # 新图登记：python scripts/register_generation.py anchor.png variant.png generation.json new-case
 # generation.json 必须含 prompt、provider、带时区 generated_at；可选 model（未知不猜）。
 ```
+
+## 运行环境
+
+| 项 | 状态 |
+|---|---|
+| Windows 11 + Python 3.12 / 3.13 | ✅ 实测通过 |
+| Linux / macOS | ⚠️ **未实测**。代码用 `pathlib`，无硬编码分隔符，理论上可跑，但测试只在 Windows 跑过，不声称支持 |
+
+诚实标注：没实跑过的平台，不要在对外文案里写「已支持」。

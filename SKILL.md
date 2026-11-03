@@ -1,9 +1,12 @@
 ---
 name: same-object-visual-dictionary
-description: 将同一参考对象的提示词变体整理为可比较的本地图片词典，适用于风格对比与效果库交付。
+description: 围绕同一商品整理参考图、换场景图片和提示词，记录文件与来源并生成图库；生成效果需要人工验收。
 license: MIT
----
+version: "1.1.0"
+display_name: "同款商品场景图库"
+agent_created: true
 
+---
 # 同对象视觉词典
 
 先锁定一个参考对象和基准图。每个变体只改变一个计划变量；记录提示词、参考图、生成参数和模型名称，取不到的参数标 UNKNOWN。
