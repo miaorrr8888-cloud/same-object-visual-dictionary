@@ -2,7 +2,7 @@
 name: same-object-visual-dictionary
 description: 围绕同一商品整理参考图、换场景图片和提示词，记录文件与来源并生成图库；生成效果需要人工验收。
 license: MIT
-version: "1.1.0"
+version: 1.1.1
 display_name: "同款商品场景图库"
 agent_created: true
 
