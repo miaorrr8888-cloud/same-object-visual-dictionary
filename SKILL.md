@@ -1,5 +1,8 @@
 ---
 name: same-object-visual-dictionary
+slug: zhengrong-same-object-visual-dictionary
+displayName: "同款商品场景图库"
+summary: "围绕同一商品整理参考图、换场景图和提示词，记录文件与来源并生成图库；生成效果需要人工验收。"
 description: 围绕同一商品整理参考图、换场景图片和提示词，记录文件与来源并生成图库；生成效果需要人工验收。
 license: MIT
 version: 1.1.1
